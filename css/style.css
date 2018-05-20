@@ -25,11 +25,16 @@
 
 .chapters-menu {
   position: fixed;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
   height: 100px;
   background-color: #333;
+  -webkit-transition: bottom .2s; /* Safari */
+  transition: bottom .2s;
+}
+.chapters-menu.show {
+  bottom: 0;
 }
 
 #chapters-menu-toggle {
