@@ -1,3 +1,8 @@
+// Toggle the chapters menu
+$( "#chapters-menu-toggle" ).click(function() {
+  $( "div.chapters-menu" ).toggleClass( "show" );
+});
+
 // Load the VR View
 window.addEventListener('load', onVrViewLoad);
 function onVrViewLoad() {
